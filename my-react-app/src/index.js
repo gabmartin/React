@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import App from "./forms/App5";
+import App from "./forms/App_Effect";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
