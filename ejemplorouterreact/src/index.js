@@ -5,7 +5,7 @@ import Contact from './Contact/contact';
 import About from './About/about';
 import Error from './Error/errorPage';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
-
+import ContactHijo from './Contact/contactHijo';
 
 const router = createBrowserRouter([
   {
@@ -19,7 +19,11 @@ const router = createBrowserRouter([
   },
   {
     path:'/contact',
-    element:<Contact/>
+    element:<Contact/>,
+    children: [{
+      path: "/contact/:contactid",
+      element: <ContactHijo></ContactHijo>
+    }]
   }
 ]);
 
